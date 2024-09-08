@@ -1,0 +1,268 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Truculenta ;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #d5e8ae;
+}
+svg{
+color: rgb(5, 8, 1);
+
+} 
+.menu{
+    color: rgb(1, 13, 3);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.menu:hover,svg:hover{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color:rgb(16, 16, 1) ;
+    font-weight: lighter;
+    position: relative;
+    left:50%;
+}
+a:hover{
+    cursor: pointer;
+}
+a:focus{
+    color: rgba(16, 4, 27, 0.865);
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    height: 2vh;
+    position: relative;
+    margin: 2vh;
+    /* z-index: 100;higher the value it appears first in overlapping objects */
+    
+}
+
+.des{
+    font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 6vh;
+}
+
+
+#svg{
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    position: absolute;
+    right: 4.1%;
+    top: 6%;
+    z-index: 100;
+    visibility: hidden;
+    }
+
+#svg>a{
+    border: 0.01vh solid black;
+    padding: 0.5vh;
+    text-align: center;
+    margin: 0.5vh;
+    font-weight: 600;  
+    color: rgb(2, 21, 21);
+}
+
+img{
+    width: 5rem;
+    border: black 0.01rem solid;
+    border-radius: 1.1vh;
+    margin-left:0.56rem ;
+}
+#myintro1{
+    margin-top: 0.3rem;
+    font-size: 2.5vh;
+    width: 30vw;
+    text-align: justify;
+    transform: translateX(13%);
+    
+}
+
+#name{
+    position: absolute;
+    left: 8%;
+    top: 15%;
+    font-size: 1.5rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Times, serif, Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#job{
+    position: relative;
+    left:20%;
+    font-size: 2.5vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif, Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+p{
+    font-size: 3vh;
+    margin-bottom: 1.5vh;
+    margin-top: 2vh;
+    font-weight:600;
+    border: 0.01vh solid black;
+    width:fit-content;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background-color:#151517;
+    color: #e5e4eb;
+    border-radius: 1.8vh;
+}
+
+#Part1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: fit-content;
+    transform: translateX(6%);
+    max-width: 91%;
+}
+
+#line>p{
+    background-color: #151517;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 34%;
+    top: 60%;
+    width: 20vw;
+    
+}
+#edu>li{
+    width:fit-content;
+    text-align:start;
+    padding-top:1.5vh ;
+    font-size: 2.5vh;
+}
+#edu{
+     position: absolute;
+    left: 55%;
+    top: 25%;
+    
+}
+
+#feedback{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+padding: 1vh;
+    position: absolute;
+    right:0%;
+    bottom: 0%;
+    background-color:hsla(0, 2%, 84%, 0.6);
+    border-radius: 1.8vh;
+    font-weight: 700;
+}
+#alert{
+    width: 20vw;
+    height: 25vh;
+
+    background-color:hsla(0, 2%, 84%, 0.6) ;
+    font-weight: 700;
+    border: 0.1vh black solid;
+    border-radius: 2vh;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top:auto;
+padding: 1vh;
+    transform: translate(-50%,-20%);
+}
+
+form{
+    min-height:50dvh;
+    min-width: 30dvw;
+    background-color:#f3ead8 ;
+    border: 0.1vh black solid;
+    border-radius: 2vh;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-rows:repeat(10, 1fr) ;/*1fr and repeat function is mandetory... where grid-template-rows to define rows number 
+    and grid-template-columns is column number*/
+ grid-template-columns:auto;     /*1 column by default */
+    row-gap: 1dvh;
+    column-gap: 1dvw;
+    padding: 2rem;
+
+
+}
+button:hover{
+    cursor: pointer;
+}
+
+
+#feedbk{
+    width: 1fr;
+    height: 4vh;
+}
+
+@media (max-width:700px){
+    body{
+        width: auto;
+        height:auto;
+    }
+    #alert{
+        width: 45%;
+        height: 15vh;
+    
+        background-color:hsla(0, 2%, 84%, 0.6) ;
+        font-weight: 700;
+        border: 0.1vh black solid;
+        border-radius: 2vh;
+        text-align: center;
+        transform: translate(-50%,40%);
+        overflow-y: scroll;
+    }
+#feedback{
+    width: 100%;
+    height:auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    row-gap: 0%;
+
+
+}
+#svg{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    right: 45%;
+    top: -3%;
+    z-index: 100;
+    visibility: hidden;
+
+    }
+button{
+    width: fit-content;
+    height: fit-content;
+}
+
+}
